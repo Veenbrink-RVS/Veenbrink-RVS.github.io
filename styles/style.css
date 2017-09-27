@@ -8,6 +8,7 @@ ul a {
 	position: absolute;
 	overflow: visible;
 	float: right;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .Vac {
@@ -57,9 +58,6 @@ ul a {
 #Top_header ul il{
 	float: right;
 }
-
-
-
 
 #Bottom_header {
 	height: 50px;
@@ -117,10 +115,6 @@ ul li {
 	
 	float: right;
 }
-
-
-
-
 
 ul li ul li{
  display: none;
