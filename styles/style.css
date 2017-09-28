@@ -154,8 +154,15 @@ ul li ul li{
 
 #container3{
 	background-color: white;
-	height: 300px;
+	height: 250px;
 	margin: auto;
+	color: #084B8A;
+	text-align: center;
+}
+
+.Tekst {
+	max-width:1100px;
+	margin:auto;
 }
 
 #container4{
@@ -218,15 +225,15 @@ ul li ul li{
 }
 
 .ch-img-3 { 
-	background-image: url(../images/Round1.jpg);
+	background-image: url(../images/Round3.jpg);
 }
 
 .ch-img-4 { 
-	background-image: url(../images/Round1.jpg);
+	background-image: url(../images/Round4.jpg);
 }
 
 .ch-img-5 { 
-	background-image: url(../images/Round1.jpg);
+	background-image: url(../images/Round5.jpg);
 }
 
 .ch-info {
