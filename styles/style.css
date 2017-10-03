@@ -1,9 +1,14 @@
-ul a {
+#Bottom_header ul a {
 	text-decoration: none;
 	color: white;
 }
 
-#Header_logo {
+#Top_header ul a {
+	text-decoration: none;
+	color: white;
+}
+
+.Header_logo {
 	z-index: 100;
 	position: absolute;
 	overflow: visible;
@@ -35,8 +40,10 @@ ul a {
 }
 
 .Top_header {
-	width:1100px;
+	max-width:1100px;
 	margin: auto;
+	min-width:400px;
+	padding: 0px;
 }
 
 #Top_header {
@@ -67,14 +74,17 @@ ul a {
 	font-size: 25px;
 }
 .Bottom_header{
-	width:1100px;
+	max-width:1100px;
 	margin: auto;
+	padding: 0px;
+	min-width:400px;
 }
 
 #Bottom_header ul li{
 	float: right;
 	display: block;
 	height: 50px;
+	padding: 0px;
 }
 
 #Bottom_header ul li ul li{
@@ -84,25 +94,11 @@ ul a {
 	padding: 0px;
 	height: auto;
 	font-size: 20px;
+	line-height: ;
+	position: relative;
 }
 
-#Bottom_header ul li a:hover {
- background-color: #084B8A;
- display: block;
-}
 
-#Bottom_header ul li:hover ul li {
- display: block;
-
-}
-
-ul {
-	margin: 0px;
-	padding: 0px;
-	list-style: none;
-	color: white;
-	text-decoration: none;
-}
 
 #Top_header ul li {
 	
@@ -126,12 +122,7 @@ ul {
 	float: right;
 }
 
-ul li ul li{
- display: none;
- line-height: ;
- z-index: 99;
- position: relative;
-}
+
 
 #footer {
 	font-family: Arial;
@@ -143,31 +134,43 @@ ul li ul li{
 	background-color: #084B8A;
 	color: white;
 	position: relative;
+	background-attachment: fixed;
 
 }
 
 #container2{
 	background-color: #D8D8D8;
-	height: 200px;
+	height: auto;
 	margin: auto;
+	color: #2E2E2E;
+	text-align: center;
+	padding-left: 10%;
+	padding-bottom: 2%;
+	padding-right: 10%;
+	padding-top: 1%;
 }
 
 #container3{
-	background-color: white;
-	height: 250px;
+	height: auto;
 	margin: auto;
-	color: #084B8A;
+	color: white;
 	text-align: center;
+	padding-left: 10%;
+	padding-bottom: 2%;
+	padding-right: 10%;
+	padding-top: 1%;
 }
 
 .Tekst {
 	max-width:1100px;
 	margin:auto;
+	font-family: Arial;
+	text-align: center;
 }
 
 #container4{
 	background-color: white;
-	height: 300px;
+	height:100%;
 	margin: auto;
 }
 
@@ -177,6 +180,9 @@ ul li ul li{
 	margin: auto;
 	padding-bottom: 1%;
 	padding-top: 1%;
+	background-attachment: fixed;
+	color: white;
+	text-align: center;
 }
 
 
@@ -353,5 +359,91 @@ ul li ul li{
 	display: inline-block;
 	margin-left: 20px;
 	margin-right: 20px;
+}
+
+.Zwembaden-header {
+	max-height:400px;
+	z-index:70;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1000px){
+	#Bottom_header ul li{
+		box-sizing: border-box;
+		width: 100%;
+	}
+	#Bottom_header ul li ul li{
+		box-sizing: border-box;
+		width: 50%;
+	}
+	.Header_logo {
+		display: none;
+	}}
+
+#trigger2 { display: none }
+
+/* Slide out when checked */
+#trigger2:checked ~ .Bottom_header {
+    max-height: 10em;
+}
+
+.Bottom_header {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height linear .2s;
+}
+
+#Bottom_header ul li a:hover {
+ background-color: #084B8A;
+ display: block;
+}
+
+#Bottom_header ul li:hover ul li {
+ display: block;
+
+}
+
+
+
+
+
+
+.sect{
+	height: 50%;
+	background-size: cover;
+	background-attachment: fixed;
+	/*opacity: 0.8;*/
+
+}
+
+.subSection{
+	height: auto;
+	background-color: grey;
+
+}
+
+.sectOne{
+	Background-image: url(../images/1.jpg);
+	
+}
+
+.sectTwo{
+	Background-image: url(../images/2.jpg);
+}
+
+.sectThree{
+	Background-image: url(../images/3.jpg);
+}
+
+html,body{
+	height: 100%;
 }
 
