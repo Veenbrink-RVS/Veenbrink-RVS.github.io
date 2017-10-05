@@ -98,6 +98,9 @@
 	position: relative;
 }
 
+Header{
+	height: 100%;
+}
 
 
 #Top_header ul li {
@@ -112,13 +115,10 @@
 }
 
 #Bottom_header ul li {
-	
 	width: 200px;
-	
 	line-height: 50px;
 	background-color: #2E2E2E;
 	text-align: center;
-	
 	float: right;
 }
 
@@ -185,17 +185,56 @@
 	text-align: center;
 }
 
+.sect{
+	height: 120%;
+	background-size: cover;
+	background-attachment: fixed;
+	/*opacity: 0.8;*/
 
+}
 
+.subSection{
+	height: auto;
+	background-color: grey;
 
+}
 
+.sectOne{
+	Background-image: url(../images/1.jpg);
+	color: white;
+	font-size: 300%;
+	padding: 2%;
+}
 
+.sectOne p {
+	font-size: 70%;
+	margin-top: 5%;
+}
 
+.sectTwo{
+	Background-image: url(../images/2.jpg);
+	color: #2E2E2E;
+	font-size: 300%;
+	padding: 2%;
+}
 
+.sectTwo p {
+	font-size: 70%;
+	margin-top: 5%;
+}
 
+.sectThree{
+	Background-image: url(../images/3.jpg);
+	color: white;
+	font-size: 300%;
+	padding: 2%;
+	
+}
 
-
-
+.sectThree p {
+	font-size: 70%;
+	margin-top: 5%;
+}
 
 .wrap {
    overflow: hidden;
@@ -204,7 +243,7 @@
    margin:auto;
 }
 
-.ch-item {
+.Rounditem {
 	width: 100%;
 	height: 100%;
 	border-radius: 50%;
@@ -222,27 +261,37 @@
 	transition: all 0.4s ease-in-out;
 }
 
-.ch-img-1 { 
+.Roundimg-1 { 
 	background-image: url(../images/Round1.jpg);
 }
 
-.ch-img-2 { 
+.Roundimg-2 { 
 	background-image: url(../images/Round2.jpg);
 }
 
-.ch-img-3 { 
+.Roundimg-3 { 
 	background-image: url(../images/Round3.jpg);
 }
 
-.ch-img-4 { 
+.Roundimg-4 { 
 	background-image: url(../images/Round4.jpg);
 }
 
-.ch-img-5 { 
+.Roundimg-5 { 
 	background-image: url(../images/Round5.jpg);
 }
 
-.ch-info {
+.Roundimg-6 { 
+	background-image: url(../images/Round6.png);
+	background-size: cover;
+}
+
+.Roundimg-7 { 
+	background-image: url(../images/Round6.png);
+	background-size: cover;
+}
+
+.Roundinfo {
 	position: absolute;
 	background: rgba(8,75,138, 0.8);
 	width: inherit;
@@ -255,18 +304,15 @@
 	-o-transition: all 0.4s ease-in-out;
 	-ms-transition: all 0.4s ease-in-out;
 	transition: all 0.4s ease-in-out;
-	
 	-webkit-transform: scale(0);
 	-moz-transform: scale(0);
 	-o-transform: scale(0);
 	-ms-transform: scale(0);
 	transform: scale(0);
-	
 	-webkit-backface-visibility: hidden;
-
 }
 
-.ch-info h3 {
+.Roundinfo h3 {
 	color: #fff;
 	text-transform: uppercase;
 	letter-spacing: 2px;
@@ -280,7 +326,7 @@
 		0 1px 2px rgba(0,0,0,0.3);
 }
 
-.ch-info p {
+.Roundinfo p {
 	color: #fff;
 	padding: 10px 5px;
 	font-style: italic;
@@ -295,7 +341,7 @@
 	transition: all 1s ease-in-out 0.4s;
 }
 
-.ch-info p a {
+.Roundinfo p a {
 	display: block;
 	color: #fff;
 	color: rgba(255,255,255,0.7);
@@ -308,17 +354,18 @@
 	font-family: 'Open Sans', Arial, sans-serif;
 }
 
-.ch-info p a:hover {
+.Roundinfo p a:hover {
 	color: #fff222;
 	color: rgba(255,242,34, 0.9);
 }
 
-.ch-item:hover {
+.Rounditem:hover {
 	box-shadow: 
 		inset 0 0 0 1px rgba(255,255,255,0.1),
 		0 1px 2px rgba(0,0,0,0.1);
 }
-.ch-item:hover .ch-info {
+
+.Rounditem:hover .Roundinfo {
 	-webkit-transform: scale(1);
 	-moz-transform: scale(1);
 	-o-transform: scale(1);
@@ -327,14 +374,11 @@
 	opacity: 1;
 }
 
-.ch-item:hover .ch-info p {
+.Rounditem:hover .Roundinfo p {
 	opacity: 1;
 }
 
-
-
-
-.ch-grid {
+.Roundgrid {
 	margin: 20px 0 0 0;
 	padding: 0;
 	list-style: none;
@@ -343,17 +387,17 @@
 	width: 100%;
 }
 
-.ch-grid:after,
-.ch-item:before {
+.Roundgrid:after,
+.Rounditem:before {
 	content: '';
     display: table;
 }
 
-.ch-grid:after {
+.Roundgrid:after {
 	clear: both;
 }
 
-.ch-grid li {
+.Roundgrid li {
 	width: 250px;
 	height: 250px;
 	display: inline-block;
@@ -365,15 +409,6 @@
 	max-height:400px;
 	z-index:70;
 }
-
-
-
-
-
-
-
-
-
 
 @media screen and (max-width: 1000px){
 	#Bottom_header ul li{
@@ -388,19 +423,6 @@
 		display: none;
 	}}
 
-#trigger2 { display: none }
-
-/* Slide out when checked */
-#trigger2:checked ~ .Bottom_header {
-    max-height: 10em;
-}
-
-.Bottom_header {
-    overflow: hidden;
-    max-height: 0;
-    transition: max-height linear .2s;
-}
-
 #Bottom_header ul li a:hover {
  background-color: #084B8A;
  display: block;
@@ -409,38 +431,6 @@
 #Bottom_header ul li:hover ul li {
  display: block;
 
-}
-
-
-
-
-
-
-.sect{
-	height: 50%;
-	background-size: cover;
-	background-attachment: fixed;
-	/*opacity: 0.8;*/
-
-}
-
-.subSection{
-	height: auto;
-	background-color: grey;
-
-}
-
-.sectOne{
-	Background-image: url(../images/1.jpg);
-	
-}
-
-.sectTwo{
-	Background-image: url(../images/2.jpg);
-}
-
-.sectThree{
-	Background-image: url(../images/3.jpg);
 }
 
 html,body{
